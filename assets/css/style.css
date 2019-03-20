@@ -1,0 +1,21 @@
+.container-fluid {
+    padding: 0;
+}
+
+.parallax-window {
+	min-height: 75vh;
+	background: transparent;
+}
+
+h1, h5 {
+    text-align: center;
+    margin: auto;
+}
+
+.mainHeader {
+    font-size: 60px;
+    background: #eee;
+    padding: 18px 30px;
+    border-radius: 16px;
+    opacity: .9;
+}
