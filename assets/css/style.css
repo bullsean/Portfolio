@@ -1,3 +1,7 @@
+body {
+    overflow-x: hidden;
+}
+
 .container-fluid {
     padding: 0;
 }
@@ -9,7 +13,6 @@
 
 h1, h5 {
     text-align: center;
-    margin: auto;
 }
 
 .mainHeader {
@@ -18,4 +21,16 @@ h1, h5 {
     padding: 18px 30px;
     border-radius: 16px;
     opacity: .9;
+}
+
+#intro.mainHeader {
+    margin: 25vh 25vh 5vh;
+}
+
+#title {
+    font-size: 80px;
+}
+
+#introInfo {
+    line-height: 5vh;
 }
