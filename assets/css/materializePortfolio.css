@@ -48,6 +48,12 @@ h1 {
 .projectImg {
     border-radius: 15px;
 }
+i {
+    margin: 0 5vw 0 0;
+}
+i:last-of-type {
+    margin: 0 0 0 0;
+}
 
 
  @media only screen and (max-width : 992px) {
