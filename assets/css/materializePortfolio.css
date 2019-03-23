@@ -45,6 +45,9 @@ h1 {
 .projectTitle {
     margin-top: 0%;
 }
+.projectImg {
+    border-radius: 15px;
+}
 
 
  @media only screen and (max-width : 992px) {
