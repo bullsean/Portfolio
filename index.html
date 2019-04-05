@@ -1,101 +1,328 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Sean Bullock Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-        
-    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bullsean | Portfolio</title>
 
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:400,600" rel="stylesheet">
+  <!-- Compiled and minified Materialize CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+
+  <link href="assets/css/materializePortfolio.css" type="text/css" rel="stylesheet" media="screen,projection" />
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
 </head>
 
-<body>
-    <div class="container-fluid">
-        <div class="parallax-window" data-parallax="scroll" data-image-src="assets/images/stefan-kunze-26932-unsplash.jpg">
-            <div class="row">
-                <div class="col">
-                    <div class="mainHeader" id= "intro">
-                        <h1 id="title">Sean Bullock | Full-Stack Dev</h1>
-                        <h5 id="introInfo">Here's something about me! Elevator pitch, my story...but different than resume</h5></div>
-                </div>
-            </div>
+<body class="grey lighten-4">
+  <!-- <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo">Your Name</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav> -->
+
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center white-text">Sean Bullock</h1>
+        <div class="row center">
+          <h5 class="header col s12 white-text">Full-Stack Web Developer</h5>
         </div>
+        <!-- <div class="row center">
+          <img src="assets/images/ramy-kabalan-796973-unsplash.jpg" class="responsive-img valign" alt=""
+            style="width: 20vw;">
+        </div> -->
+        <div class="row center">
+          <a href="#projects" id="download-button" class="btn-large waves-effect waves-light blue"
+            style="margin-top: 55vh;"><i class="material-icons right">arrow_downward</i>Check Me Out</a>
+        </div>
+        <br><br>
+
+      </div>
+    </div>
+    <div class="parallax"><img src="assets/images/tianyi-ma-1066731-unsplash.jpg" alt="Unsplashed background img 1">
+    </div>
+  </div>
+
+  <!--   Icon Section   -->
+  <div class="container">
+    <div class="row" id="projects">
+      <div class="col s12">
+        <div class="icon-block">
+          <h2 class="center grey-text"><i class="material-icons">settings</i></h2>
+          <h2 class="header center grey-text text-darken-4">Projects</h2>
+
+        </div>
+      </div>
+
+    </div>
+    <div class="divider"></div>
+    <br><br>
+    <div class="row">
+      <div class="col l6 m12 s12">
+        <img src="assets/images/mainpage mockup.jpg" class="responsive-img projectImg" alt="First Project">
+      </div>
+      <div class="col l6 m12 s12">
+        <h4 class="projectTitle">Portfolio Builder | CMS</h4>
+        <p>A full-stack web application which takes in user information to build a sleek online personal portfolio page.
+        </p>
+        <h5 class="projectDescription">Under the hood</h5>
+        <p>Through Firebase web authentication, users can create an account and submit form inputs into the MySQL
+          database. Using Sequelize as an ORM, user data is retrieved and served live to the front-end through
+          Handlebars semantic templating. A Node.js Express server is hosted on Heroku along with JawsDB.</p>
+        <br>
+        <div class="center">
+          <a class="waves-effect waves-light btn-large grey" href="https://github.com/bullsean/BSDev-PortfolioBuilder">View on <i class="fab fa-github-square"></i></a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="techlogorow center-align col s12">
+          <img class="techlogos" src="assets/images/TechLogos/Firebase-logo.png" alt="Firebase">
+          <img class="techlogos" src="assets/images/TechLogos/handlebars-logo.png" alt="Handlebars">
+          <img class="techlogos" src="assets/images/TechLogos/jquery-logo.png" alt="jQuery">
+          <img class="techlogos" src="assets/images/TechLogos/materialize-logo.png" alt="Materialize">
+          <img class="techlogos" src="assets/images/TechLogos/mysql-logo.png" alt="MySQL">
+          <img class="techlogos" src="assets/images/TechLogos/node-logo.png" src="Node.js">
+          <img class="techlogos" src="assets/images/TechLogos/express-logo.png" src="Express">
+          <img class="techlogos" src="assets/images/TechLogos/sequelize-logo.png" alt="Sequelize">
+          <img class="techlogos" src="assets/images/TechLogos/heroku-logo.png" alt="Heroku">
+        </div>
+      </div>
     </div>
     <br>
+    <div class="divider"></div>
+    <br><br>
+    <div class="row">
+      <div class="col l6 m12 s12">
+        <h4 class="projectTitle">SmallTalk</h4>
+        <p>SmallTalk personal assistant provides users with conversation starters for first encounters, dates, or
+          meetings. Have social anxiety? Give SmallTalk a go!
+        </p>
+        <h5 class="projectDescription">Under the hood</h5>
+        <p>
+          SmallTalk retrieves, parses and displays social interaction data from API calls made through jQuery's ajax
+          method. JSON-formatted data is displayed through a functional Bootstrap layout utilizing Animate.css &
+          ScrollReveal CSS libraries.
+        </p>
+        <br>
+        <div class="center">
+          <a class="waves-effect waves-light btn-large grey" style="margin-bottom: 2%" href="https://github.com/bullsean/project1">View on <i class="fab fa-github-square"></i></a>
+        </div>
+      </div>
+
+      <div class="col l6 m12 s12">
+        <img src="assets/images/ui8-199275-unsplash.jpg" class="responsive-img projectImg" alt="First Project">
+      </div>
+    </div>
+    <div class="row">
+      <div class="techlogorow center-align col s12">
+        <img class="techlogos" src="assets/images/TechLogos/javascript-html-css-logo.png" alt="JS HTML CSS">
+        <img class="techlogos" src="assets/images/TechLogos/scrollreveal-logo.svg" alt="JS HTML CSS">
+        <img class="techlogos" src="assets/images/TechLogos/bootstrap-log.png" alt="Bootstrap">
+        <img class="techlogos" src="assets/images/TechLogos/jquery-logo.png" alt="jQuery">
+        <img class="techlogos" src="assets/images/TechLogos/momentjs-logo.png" alt="MomentJS">
+        <img class="techlogos" src="assets/images/TechLogos/animate-css-logo.png" alt="Animate.css">
+      </div>
+    </div>
+    <br>
+    <div class="divider"></div>
+    <br>
+  </div>
+
+  <!-- Card Column Insertion -->
+  <div class="section grey">
+    <br>
+    <div class="row" id="projects">
+      <div class="col s12">
+        <div class="icon-block">
+          <h2 class="center white-text"><i class="material-icons">assignment_turned_in</i></h2>
+          <h2 class="header center white-text">Wanna See More?</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 cards-container">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="assets/images/e3maingpage.JPG">
+          </div>
+          <div class="card-content" style="padding-bottom: 0">
+            <span class="card-title activator grey-text text-darken-4">E³ Health & Fitness<i
+                class="material-icons right">more_vert</i></span>
+            <div class="card-action">
+              <a href="https://bullsean.github.io/E3_Health_and_Fitness/">See the front-end</a>
+            </div>
+          </div>
+          <div class="card-reveal white-text red darken-1">
+            <span class="card-title">E³ Health & Fitness<i class="material-icons right">close</i></span>
+            <p>I'm currently constructing a full-stack web application for a local personal trainer and entrepreneur.
+              Check up on it to see my progress!</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image responsive-img">
+            <img src="assets/images/Personal/Ironman.jpg">
+          </div>
+          <div class="card-stacked">
+            <div class="card-content">
+              <p>I work hard, and I work out hard! I love to compete and push myself - I completed the Ironman Texas
+                Triathlon in 2018 in 10:30.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content center-align">
+            <img class="techlogos" src="assets/images/TechLogos/giphy-logo.png" alt="Giphy">
+            <p>GIFs, GIFs, everywhere. Which one to choose, and which new ones to search? This app utilizes the Giphy
+              API to query to most popular GIFs based on your search term. Toggle the GIFs on and off with simpe click.
+            </p>
+          </div>
+          <div class="card-action">
+            <a href="https://bullsean.github.io/GIFtastic/">Try it out.</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <span class="card-title">Bamazon</span>
+            <p>Utilizing a combination of MySQL and Node.js, this backend app will take in orders from customers and
+              deplete stock from the Bamazon store's inventory. As a bonus, I've built in the ability for managers to
+              review stock, re-order and add new products.</p>
+          </div>
+          <div class="card-action center-align">
+            <a href="https://github.com/bullsean/bamazon">See it on Github</a>
+          </div>
+        </div>
+        <div class="card blue darken-1 white-text">
+          <div class="card-content">
+            <span class="card-title">Hometown: Houston, TX</span>
+            <p>I currently live in Houston, TX and love to spend time exploring, cruising the bayous, and eating my
+              weight in Texas BBQ with my wife and baby girl G.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content center-align">
+            <span class="card-title">LIRI Bot</span>
+            <p>A Node.js app using the Axios package to GET data from Spotify, OMDB and Bands in Town.</p>
+            <img class="techlogos" src="assets/images/TechLogos/spotify-logo.png" alt="Spotify">
+            <img class="techlogos" src="assets/images/TechLogos/bandsintown-logo.png" alt="BandsInTown">
+          </div>
+          <div class="card-action center-align">
+            <a href="https://github.com/bullsean/liri-bot-app">See it on Github</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <span class="card-title">Utah Native</span>
+            <p>Born, raised and introduced to the world of software development on the Silicon Slopes of Salt Lake City,
+              UT.</p>
+          </div>
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="assets/images/Personal/michael-tuszynski-1318507-unsplash.jpg">
+          </div>
+        </div>
+        <div class="card blue darken-1 white-text">
+          <div class="card-content">
+            <span class="card-title">Wanderlust</span>
+            <p>Voglia di girovagare. I suffer, and don't plan to cure it. Bring on the avventure. Especially if it allows me to use my fluent Italian or budding Spanish.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image">
+            <img src="assets/images/friendFinder.JPG">
+            <span class="card-title">FriendFinder</span>
+          </div>
+          <div class="card-content">
+            <p>FriendFinder is a compatibility-based matching application -- basically a dating app utilizing Express
+              routing and Heroku deployment. This full-stack site will take in results from users' surveys, then compare
+              their answers with those from Bullock family members. The app will then display the name and picture of
+              the Bullock with the best overall match.</p>
+          </div>
+          <div class="card-action right-align">
+            <a href="https://immense-chamber-96503.herokuapp.com/">Check out the site</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <span class="card-title center-align"><i class="far fa-gem"></i>Crystal Collector<i class="far fa-gem"></i></span>
+            <p>How much is that crystal worth? Try your luck at a game of random numbers and math.</p>
+          </div>
+          <div class="card-action right-align">
+            <a href="https://bullsean.github.io/crystal-collector/">Collect Crystals</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Card Column Insertion -->
+
+  </div>
+  </div>
+  </div>
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 center">
+            <h3><i class="mdi-content-send brown-text"></i></h3>
+            <h2><a class="white-text" href="https://www.linkedin.com/in/bullocksean/">My Skills</a></h2>
+            <h2><a class="white-text" href="https://www.linkedin.com/in/bullocksean/">Education</a></h2>
+            <h2><a class="white-text" href="https://www.linkedin.com/in/bullocksean/#experience-section">Experience / Accomplishments</a></h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="assets/images/tim-navis-78745-unsplash.jpg" alt="Unsplashed background img 2">
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center">
+          <h2>Connect</h2>
+          <h1><a class="logo" href="https://www.linkedin.com/in/bullocksean/"><i class="fab fa-linkedin connect"></a></i><a class="logo" href="https://github.com/bullsean"><i class="fab fa-github-square connect"></a></i><a class="logo" href="mailto:sean.r.bullock@gmail.com"><i class="fas fa-envelope-square connect"></i></a>
+          </h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="page-footer grey">
     <div class="container">
-        <div class="mainHeader"><h1>Projects</h1></div>
-        <hr class="featurette-divider">
-
-        <div class="row featurette">
-            <div class="col-md-7">
-                <h2 class="featurette-heading">Project 1 <span class="text-muted">Description</span></h2>
-                <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-            </div>
-            <div class="col-md-5">
-                <img class="featurette-image img-fluid mx-auto rounded"
-                    src="assets/images/sven-scheuermeier-37377-unsplash_1400.jpg" alt="Generic placeholder image">
-            </div>
+      <div class="row">
+        <div class="col s12">
+          <h5 class="white-text center-align">BullSean Web Dev <i class="fas fa-copyright"></i> 2019</h5>
         </div>
-
-        <hr class="featurette-divider">
-
-        <div class="row featurette">
-            <div class="col-md-7 order-md-2">
-                <h2 class="featurette-heading">Project 2 <span class="text-muted">See for
-                        yourself.</span></h2>
-                <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-            </div>
-            <div class="col-md-5 order-md-1">
-                <img class="featurette-image img-fluid mx-auto rounded"
-                    src="assets/images/arwin-neil-baichoo-1259757-unsplash.jpg" alt="Generic placeholder image">
-            </div>
-        </div>
-
-        <hr class="featurette-divider">
-
-        <div class="row featurette">
-            <div class="col-md-7">
-                <h2 class="featurette-heading">Project 3 <span class="text-muted">Checkmate.</span></h2>
-                <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-            </div>
-            <div class="col-md-5">
-                <img class="featurette-image img-fluid mx-auto rounded"
-                    src="assets/images/sven-scheuermeier-37377-unsplash_1400.jpg" alt="Generic placeholder image">
-            </div>
-        </div>
-
-        <hr class="featurette-divider">
+      </div>
+    </div>
+  </footer>
 
 
-        <!-- /END THE FEATURETTES -->
+  <!--  Scripts-->
+  <!-- Compiled and minified Materialize JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script type="text/javascript" src="assets/js/init.js"></script>
 
-    </div><!-- /.container -->
-    <div class="mainHeader"><h1>Contact Me</h1></div>
-    <script>
-    $('.parallax-window').parallax({imageSrc: 'assets/images/stefan-kunze-26932-unsplash.jpg'});
-    </script>
 </body>
 
 </html>
-
-
-<!-- Section For About Me In Console.log(Potential) -->
-
-<!-- Section for Projects -->
-
-<!-- Section for Contacting Me -->
