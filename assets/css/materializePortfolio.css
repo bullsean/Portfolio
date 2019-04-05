@@ -39,11 +39,19 @@ h1 {
 .projectImg {
     border-radius: 15px;
 }
-i {
-    margin: 0 5vw 0 0;
+i.connect {
+  margin: 0 2vw 0 2vw;
+
 }
-i:last-of-type {
+/* i:last-of-type {
     margin: 0 0 0 0;
+} */
+
+
+a.logo {
+  border-left: 0 none;
+  text-align: center;
+  clear: both;
 }
 
 .projectDescription {
